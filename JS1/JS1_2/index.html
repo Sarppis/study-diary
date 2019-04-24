@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>JS 1.2</title>
+  </head>
+  <body>
+    <section id="">
+    <h1>JS 1.2</h1><br>
+    <h2>Calculate average speed</h2>
+    <p>Give distance and the time you are going to use.</p><br>
+    <h2>Solution</h2>
+    <form name="ask">
+      Distance<br>
+      <input type="number" name="distance"><br><br>
+      Time<br>
+      <input type="number" name="time">
+      </form>
+<button type="button" onclick="myFunction()">Calculate</button>
+    <h4>Answer</h4>
+    <p id="demo"></p><br>
+    <h4>Code example</h4>
+    <textarea readonly>
+      function myFunction(){
+        var distance = Number(document.forms["ask"]["distance"].value);
+        var time = Number(document.forms["ask"]["time"].value);
+        var total = distance/time;
+        document.getElementById("demo").innerHTML ="Your average speed is "+total+" km/h.";
+      }
+    </textarea>
+    <script>
+    function myFunction(){
+      var distance = Number(document.forms["ask"]["distance"].value);
+      var time = Number(document.forms["ask"]["time"].value);
+      var total = distance/time;
+      document.getElementById("demo").innerHTML ="Your average speed is "+total+" km/h.";
+    }
+    </script>
+  </section>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="colors.json"></script>
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+    <meta charset="utf-8">
+    <title>Random color</title>
+</head>
+
+<body>
+  <div class="act">
+    <h2>Change the backround color</h2><br>
+    <input type='submit' value='Click' onclick="randomColor()"></input>
+    </div>
+
+    <p id="demo"></p>
+
+    <script>
+      function randomColor() {
+
+        let randomItem = colors[Math.floor(Math.random() * colors.length)];
+        document.getElementById('demo').innerHTML = randomItem.name;
+        document.body.style.backgroundColor = randomItem.hex;
+      }
+    </script>
+</body>
+
+</html>

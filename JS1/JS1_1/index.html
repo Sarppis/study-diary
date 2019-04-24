@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <base target="name_of_iframe">
+    <title>JS 1.1</title>
+  </head>
+  <body>
+    <section id="">
+    <h1>JS 1.1</h1><br>
+    <h2>How much gasoline you get?</h2>
+    <p>Give gasolinen price per liter and how much money you are going to use.</p><br>
+    <h2>Solution</h2>
+    <form name="ask">
+      How much gasoline costs?<br>
+      <input type="number" name="price"><br><br>
+      How much money you have?<br>
+      <input type="number" name="money">
+      </form>
+    <button type="button" onclick="myFunction()">Calculate</button>
+    <h4>Answer</h4>
+    <p id="demo"></p><br>
+    <h4>Code example</h4>
+    <textarea readonly>
+      function myFunction(){
+        var price = Number(document.forms["ask"]["price"].value);
+        var money = Number(document.forms["ask"]["money"].value);
+        var total = money/price;
+        document.getElementById("demo").innerHTML ="You are going to get "+total+" liters of gasoline.";
+      }
+    </textarea>
+    <script>
+      function myFunction(){
+        var price = Number(document.forms["ask"]["price"].value);
+        var money = Number(document.forms["ask"]["money"].value);
+        var total = money/price;
+        document.getElementById("demo").innerHTML ="You are going to get "+total+" liters of gasoline.";
+      }
+    </script>
+      </section>
+  </body>
+</html>

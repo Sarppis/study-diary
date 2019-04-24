@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>JS 1.2</title>
+  </head>
+  <body>
+    <section id="">
+    <h1>JS 1.3</h1><br>
+    <h2>Transform inches to cm</h2>
+    <p>Give amount of inches and I will tell you this in centimeters.</p><br>
+    <h2>Solution</h2>
+    <form name="ask">
+      Inches <input type="number" name="inches"><br>
+      </form>
+    <button type="button" onclick="myFunction()">Calculate</button>
+    <h4>Answer</h4>
+    <p id="demo"></p><br>
+    <h4>Code example</h4>
+    <textarea readonly>
+      function myFunction(){
+        var inches = Number(document.forms["ask"]["inches"].value);
+        var total = inches*2.54;
+        document.getElementById("demo").innerHTML =""+inches+" inches is "+total+" centimeters.";
+      }
+    </textarea>
+    <script>
+    function myFunction(){
+      var inches = Number(document.forms["ask"]["inches"].value);
+      var total = inches*2.54;
+      document.getElementById("demo").innerHTML =""+inches+" inches is "+total+" centimeters.";
+    }
+    </script>
+  </section>
+  </body>
+</html>

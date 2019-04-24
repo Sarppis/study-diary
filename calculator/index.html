@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>Calculator</title>
+        <meta charset="utf-8">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="style.css">
+      </head>
+  <body>
+    <h1>Calculator</h1><br>
+    <form name="calculator">
+    <table>
+      <tr>
+        <td colspan="4"><input type ="text" name="input" class="answer" value=""></td>
+      </tr>
+      <tr>
+        <td><input type ="button" name="clear" class="clear" value="AC" onclick="calculator.input.value = ''"></td>
+        <td><input type ="button" name="plusminus" class="clear" value=" +/- " onclick="calculator.input.value +="></td>
+        <td><input type ="button" name="procent" class="clear" value=" % " onclick="calculator.input.value +='%'"></td>
+        <td><input type ="button" name="div" class="yellow" value=" / " onclick="calculator.input.value +=' / '"></td>
+      </tr>
+      <tr>
+        <td><input type ="button" name="seven" class="grey" value=" 7 " onclick="calculator.input.value +='7'"></td>
+        <td><input type ="button" name="eight" class="grey" value=" 8 " onclick="calculator.input.value +='8'"></td>
+        <td><input type ="button" name="nine" class="grey" value=" 9 " onclick="calculator.input.value +='9'"></td>
+        <td><input type ="button" name="mul" class="yellow" value=" * " onclick="calculator.input.value +='*'"></td>
+      </tr>
+      <tr>
+        <td><input type ="button" name="four" class="grey" value=" 4 " onclick="calculator.input.value +='4'"></td>
+        <td><input type ="button" name="five" class="grey" value=" 5 " onclick="calculator.input.value +='5'"></td>
+        <td><input type ="button" name="six" class="grey" value=" 6 " onclick="calculator.input.value +='6'"></td>
+        <td><input type ="button" name="minus" class="yellow" value=" - " onclick="calculator.input.value +=' - '"></td>
+      </tr>
+      <tr>
+        <td><input type ="button" name="one" class="grey" value=" 1 " onclick="calculator.input.value +='1'"></td>
+        <td><input type ="button" name="two" class="grey" value=" 2 " onclick="calculator.input.value +='2'"></td>
+        <td><input type ="button" name="three" class="grey" value=" 3 " onclick="calculator.input.value +='3'"></td>
+        <td><input type ="button" name="add" class="yellow" value=" + " onclick="calculator.input.value +=' + '"></td>
+      </tr>
+      <tr>
+        <td><input type ="button" name="zero" class="grey" value=" 0 " onclick="calculator.input.value +='0'"></td>
+        <td><input type ="button" name="dot" class="grey" value=" , " onclick="calculator.input.value +=' , '"></td>
+        <td><input type ="button" name="doIt" class="yellow" value=" = " onclick="calculator.input.value = eval(calculator.input.value)"></td>
+      </tr>
+    </table>
+    </form>
+    <br>
+    </body>
+</html>

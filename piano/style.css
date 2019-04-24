@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+}
+
+body, html {
+  height: 100%;
+  scroll-behavior: smooth;
+  }
+body {
+  font-family: "Roboto";
+}
+
+.bottom {
+  display: block;
+  padding: 20px 0 20px 0;
+  width: 520px;
+  height: 370px;
+  font-size: 0;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 0 4px #c4c1c1 inset;
+  background-image: repeating-linear-gradient(125deg, #2e2e30 2px, #212222 3px);
+}
+
+.top {
+  width: 480px;
+  height: 70px;
+  background-image: repeating-linear-gradient(125deg, #2e2e30 2px, #212222 3px);
+  margin: 0 20px 20px;
+  border-radius: 4px;
+  box-shadow: 2px 2px 3px 5px #212222;
+
+  }
+
+.screen {
+  display: inline-block;
+  width: 360px;
+  height: 40px;
+  float: left;
+  margin: 15px;
+  background-color: #e0ed4e;
+  }
+
+i {
+  padding: 5px;
+  border-radius: 50%;
+  text-align: center;
+  vertical-align: middle;
+  box-shadow: 1px 2px 6px #363838 inset;
+  }
+
+  .button {
+    float: right;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    margin: 20px;
+    background-color: #1f201f;
+    color: white;
+    border-style: none;
+    box-shadow: 2px 4px 10px #363838;
+    box-shadow: 1px 2px 6px #363838 inset;
+  }
+
+.whitekey {
+  display: inline-block;
+  width: 50px;
+  height: 280px;
+  background-color: white;
+  border: 3px solid black;
+  border-right: none;
+  border-radius: 4px;
+  box-shadow: 1px 1px 1px 2px #212222;
+
+}
+
+.whitekey:last-child {
+  border-right: 3px solid black;
+}
+.placeholder {
+  display: inline-block;
+  width: 0px;
+  height: 170px;
+  background-color: black;
+  border-radius: 4px;
+  position: relative;
+  vertical-align: top;
+  left: 25px;
+
+}
+
+.blackkey {
+  display: inline-block;
+  width: 40px;
+  height: 170px;
+  background-color: black;
+  border-radius: 4px;
+  position: relative;
+  vertical-align: top;
+  left: -45px;
+  }
+
+
+.blackkey:active {
+  top: 1px;
+}
+
+.whitekey:active {
+  box-shadow: 0 0 4px #333 inset;
+}

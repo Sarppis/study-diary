@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+}
+
+body, html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Roboto";
+}
+form {
+  font-size: 12px;
+  margin-top: 10px;
+}
+input {
+  margin: 7px 0;
+}
+p {
+  font-size: 13px;
+}
+button {
+  background-color: black;
+  padding: 5px;
+  margin: 20px 0;
+  border: none;
+  border-radius: 2px;
+  color: white;
+}
+textarea {
+  width: 500px;
+  height: 100px;
+}
